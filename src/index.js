@@ -69,6 +69,7 @@ const queryHttp = async (method) => {
         }
     } catch (error) {
         log('error', 'Unable to query over HTTP for ' + method + ':' + error.toString());
+        return null;
     }
 }
 
