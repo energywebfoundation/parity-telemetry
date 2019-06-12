@@ -89,6 +89,7 @@ const processNewBlock = async (blockData) => {
         blockHash: blockData.hash,
         blockTs: parseInt(blockData.timestamp, 16),
         blockReceived: Date.now(),
+        timekey: Date.now(),
         numPeers: numPeers ? parseInt(numPeers, 16) : -1,
         numTxInBlock: blockData.transactions.length,
         gasLimit: parseInt(blockData.gasLimit,16),

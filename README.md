@@ -22,7 +22,7 @@ Change `/var/spool/parity.sock` to the path of the output pipe
    data_format = "json"
 
    tag_keys = []
-   json_time_key = "blockReceived"
+   json_time_key = "timekey"
    json_time_format = "unix_ms"
    json_string_fields = ["client","blockHash"]
    name_override = "parity"
